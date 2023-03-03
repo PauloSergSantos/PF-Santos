@@ -229,4 +229,22 @@ footer{
     text-align: start;
 }
 
+/* contacto.html */
+form{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 1200px;
+    height: 500px;
+    padding: 30px;
+    font-size: 15px;
+}
 
+
+
+.main_section_div_form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    
+}
