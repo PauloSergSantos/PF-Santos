@@ -38,15 +38,23 @@ header nav ul li a{
     text-align: end;
 }
 
+header nav ul li a:hover{
+    color:rgb(55, 0, 255);
+    
+}
+
 /* main */
 main{
     background-color: black;
 }
 
 main section div nav ul li a{
-    color: blueviolet;
+    color: rgb(58, 43, 226);
     text-decoration: none;
     font-size: 20px;
+}
+main section div nav ul li a:active{
+    color: rgb(101, 226, 43);
 }
 
 li{
