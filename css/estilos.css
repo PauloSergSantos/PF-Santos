@@ -140,7 +140,8 @@ p{
 /* Footer */
 footer{
     display: flex;
-    padding-left: 470px;
+    justify-content: start;
+    /* padding-left: 470px; */
     font-family: 'Roboto', sans-serif;
     background-color:#16C8B1;    
     height: 9rem;
