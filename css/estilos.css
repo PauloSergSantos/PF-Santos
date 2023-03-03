@@ -196,6 +196,16 @@ footer{
     align-items: center;
 }
 
+.img_vid_colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 /* descargar_juego.html */
 .li_links{
