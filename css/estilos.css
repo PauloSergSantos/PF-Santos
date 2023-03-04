@@ -12,35 +12,49 @@ html{
 header{
     background-color: #16C8B1;
     width: 100%;
-    height: 4rem;
+    height: 3rem;
+}
+
+.div_sticky_navbar{
     position: sticky;
     left: 0px;
     top: 0px;
 }
 
-
-img{
-    width: 100px;
-    height: 40px;
+.header_nav_ul_li_a_navbar{
+    display: flex;
+    justify-content: space-around;
 }
 
-header nav ul li{
-    margin-left: 120px;    
-    display: inline-block;
+.header_nav_ul_li_a_img_navbar{
+    width: 50px;
+    height: 30px;
 }
 
 header nav ul li a{
     text-decoration: none;
     font-family: 'Francois One', sans-serif;
-    font-size: 19px;
+    font-size: 15px;
     color: black;
-    text-align: center center;
-    text-align: end;
 }
 
 header nav ul li a:hover{
     color:rgb(55, 0, 255);
     
+}
+
+/* img{
+    width: 100px;
+    height: 40px;
+} */
+
+/* logo whatsapp con fixed*/
+.logo_whatsapp{
+    position: fixed;
+    left: 1260px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
 }
 
 /* main */
@@ -72,17 +86,29 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* section */
+.img_l4d2_inicio{
+    width: 400px;
+    height: 315px;
+}
+
+.main_section_div_img_vid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1{
     color: white;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Bevan', cursive;
 }
 
 h2{
     margin-left: 10px;
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'Francois One', sans-serif;
     text-align: center;
 }
@@ -90,7 +116,7 @@ h2{
 h3{
     margin-left: 10px;
     color: red;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Francois One', sans-serif;
     text-align: center;
 }
@@ -99,35 +125,6 @@ h3{
     text-align: start;
     font-size: 20px;
 }
-
-/* section */
-section{
-    display: flex;
-    margin-top: 30px;
-    color: black;
-    
-
-}
-
-section div{
-    width: 100%;
-    
-}
-
-section div ul{
-    margin-bottom: 30px;
-}
-
-.imagen_l4d2{
-    width: 560px;
-    height: 315px;
-}
-
-.img_vid{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 p{
     color: white;
@@ -140,26 +137,17 @@ p{
 /* Footer */
 footer{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     /* padding-left: 470px; */
     font-family: 'Roboto', sans-serif;
     background-color:#16C8B1;    
     height: 9rem;
 }
 
-
-.p_footer{
+.footer_p{
     color: black;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-}
-
-.logo_whatsapp{
-    position: fixed;
-    left: 1260px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
 }
 
 .logo_instagram{
@@ -180,6 +168,7 @@ footer{
     width: 50px;
     height: 44px;
 }
+
 
 
 /* personajes.html e infectados.html */
@@ -213,6 +202,25 @@ footer{
 }
 
 
+/* section */
+section{
+    display: flex;
+    margin-top: 30px;
+    color: black;
+}
+
+section div{
+    width: 100%;
+    
+}
+
+section div ul{
+    margin-bottom: 30px;
+}
+
+
+
+
 
 
 
@@ -235,13 +243,11 @@ form{
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 1200px;
-    height: 500px;
+    width: 1000px;
+    height: 550px;
     padding: 30px;
     font-size: 15px;
 }
-
-
 
 .main_section_div_form{
     display: flex;
