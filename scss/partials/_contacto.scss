@@ -1,0 +1,26 @@
+@use './variables';
+
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+main{
+    div{
+        .main_section_div_form{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+
+            form{
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                padding: 30px;
+                font-size: 15px;
+                @include medidas(550px, 1000px);
+            }
+            
+        }
+    }
+}

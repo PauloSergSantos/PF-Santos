@@ -1,0 +1,93 @@
+@use './variables';
+@mixin h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bevan', cursive;
+}
+
+@mixin h2{
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}
+
+@mixin h3{
+    margin-left: 10px;
+    color: red;
+    font-size: 30px;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}
+
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+
+main{
+    div{
+        div{
+            h1{
+                @include h1;
+            }
+        }
+    }
+
+    section{
+        .main_section_div_img_vid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img_l4d2_inicio{
+                @include medidas (315px, 400px);
+            }
+        }
+
+        .main_section_div_img_vid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            iframe{
+                @include medidas (315px, 400px);
+            }
+        }
+    }
+
+    div{
+        div{
+            h2{
+                @include h2;
+            }
+
+            p{
+                color: white;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    div{
+        div{
+            h3{
+                @include h3;
+            }
+
+            p{
+                color: white;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

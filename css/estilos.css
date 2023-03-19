@@ -1,257 +1,268 @@
-/* Globales */
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    font-size: 62.5%; 
+html {
+  font-size: 62.5%;
 }
 
-/* Navbar */
-header{
-    background-color: #16C8B1;
-    width: 100%;
-    height: 3rem;
+.div_sticky_navbar {
+  position: sticky;
+  left: 0px;
+  top: 0px;
+}
+.div_sticky_navbar header {
+  background-color: #16C8B1;
+  width: 100%;
+  height: 4rem;
+}
+.div_sticky_navbar header nav .header_nav_ul_li_a_navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li {
+  list-style: none;
+  margin: 5px;
+}
+.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a {
+  text-decoration: none;
+  font-family: "Francois One", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a:hover {
+  color: rgb(55, 0, 255);
+}
+.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a .header_nav_ul_li_a_img_navbar {
+  height: 30px;
+  width: 50px;
 }
 
-.div_sticky_navbar{
-    position: sticky;
-    left: 0px;
-    top: 0px;
+div a .logo_whatsapp {
+  position: fixed;
+  left: 1260px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
 }
 
-.header_nav_ul_li_a_navbar{
-    display: flex;
-    justify-content: space-around;
+main div div h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Bevan", cursive;
+}
+main section .main_section_div_img_vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .main_section_div_img_vid .img_l4d2_inicio {
+  height: 315px;
+  width: 400px;
+}
+main section .main_section_div_img_vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .main_section_div_img_vid iframe {
+  height: 315px;
+  width: 400px;
+}
+main div div h2 {
+  margin-left: 10px;
+  color: white;
+  font-size: 40px;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+}
+main div div p {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0px;
+}
+main div div h3 {
+  margin-left: 10px;
+  color: red;
+  font-size: 30px;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+}
+main div div p {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0px;
 }
 
-.header_nav_ul_li_a_img_navbar{
-    width: 50px;
-    height: 30px;
+main section {
+  display: flex;
+  margin-top: 30px;
+  color: black;
+}
+main section div {
+  width: 100%;
+}
+main section div p {
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0px;
+}
+main section div nav .li_container {
+  color: white;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+main section div nav .li_container li {
+  list-style: none;
+}
+main section div nav .li_container li a {
+  color: rgb(58, 43, 226);
+  text-decoration: none;
+  font-size: 20px;
+}
+main section div nav .li_container li a:active {
+  color: rgb(101, 226, 43);
+}
+main section div .img_1 {
+  height: 250px;
+  width: 400px;
+}
+main section div h3 {
+  margin-left: 10px;
+  color: red;
+  font-size: 30px;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+}
+main section div .h3_curiosidades {
+  text-align: start;
+  font-size: 20px;
+}
+main section div .li_container {
+  color: white;
+  margin-left: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+main section div .li_container li {
+  list-style: none;
+}
+main section .div_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .div_img .img_2 {
+  height: 400px;
+  width: 400px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    font-family: 'Francois One', sans-serif;
-    font-size: 15px;
-    color: black;
+main section .div_img .img_1 {
+  height: 250px;
+  width: 400px;
+}
+main section .img_vid_colum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .img_vid_colum .img_2 {
+  height: 400px;
+  width: 400px;
+}
+main section .img_vid_colum iframe {
+  height: 315px;
+  width: 400px;
+}
+main section .div_img .img_3 {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 30px;
 }
 
-header nav ul li a:hover{
-    color:rgb(55, 0, 255);
-    
+main section div h2 {
+  margin-left: 10px;
+  color: white;
+  font-size: 40px;
+  font-family: "Francois One", sans-serif;
+  text-align: center;
+}
+main section div nav .li_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  font-size: 30px;
+}
+main section div nav .li_links li {
+  list-style: none;
+}
+main section div nav .li_links li a {
+  color: rgb(58, 43, 226);
+  text-decoration: none;
+  font-size: 20px;
+}
+main section div nav .li_links li a:active {
+  color: rgb(101, 226, 43);
+}
+main section div .h3_descargar_juego {
+  text-align: start;
 }
 
-/* img{
-    width: 100px;
-    height: 40px;
-} */
-
-/* logo whatsapp con fixed*/
-.logo_whatsapp{
-    position: fixed;
-    left: 1260px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
+main div .main_section_div_form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+main div .main_section_div_form form {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 30px;
+  font-size: 15px;
+  height: 550px;
+  width: 1000px;
 }
 
-/* main */
-main{
-    background-color: black;
+div div footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #16C8B1;
+  height: 9rem;
+}
+div div footer .footer_p {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+div div footer div a .logo_instagram {
+  padding-top: 2rem;
+  margin-bottom: 10px;
+  height: 70px;
+  width: 100px;
+}
+div div footer div a .logo_gmail {
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+}
+div div footer div a .logo_facebook {
+  margin: 20px;
+  height: 44px;
+  width: 50px;
 }
 
-main section div nav ul li a{
-    color: rgb(58, 43, 226);
-    text-decoration: none;
-    font-size: 20px;
-}
-main section div nav ul li a:active{
-    color: rgb(101, 226, 43);
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.li_container{
-    color: white;
-    margin-left: 10px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* section */
-.img_l4d2_inicio{
-    width: 400px;
-    height: 315px;
-}
-
-.main_section_div_img_vid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Bevan', cursive;
-}
-
-h2{
-    margin-left: 10px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Francois One', sans-serif;
-    text-align: center;
-}
-
-h3{
-    margin-left: 10px;
-    color: red;
-    font-size: 30px;
-    font-family: 'Francois One', sans-serif;
-    text-align: center;
-}
-
-.h3_curiosidades{
-    text-align: start;
-    font-size: 20px;
-}
-
-p{
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0px;
-}
-
-/* Footer */
-footer{
-    display: flex;
-    justify-content: center;
-    /* padding-left: 470px; */
-    font-family: 'Roboto', sans-serif;
-    background-color:#16C8B1;    
-    height: 9rem;
-}
-
-.footer_p{
-    color: black;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.logo_instagram{
-    padding-top: 2rem;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 70px;
-}
-
-.logo_gmail{    
-    margin: 20px;
-    width: 50px;
-    height: 50px;
-}
-
-.logo_facebook{
-    margin: 20px;
-    width: 50px;
-    height: 44px;
-}
-
-
-
-/* personajes.html e infectados.html */
-.img_1{
-    width: 400px;
-    height: 250px;
-}
-
-.img_2{
-    width: 400px;
-    height: 400px;
-}
-
-.img_3{
-    width: 250px;
-    height: 150px;
-    margin-bottom: 30px;
-}
-
-.div_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_vid_colum{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* section */
-section{
-    display: flex;
-    margin-top: 30px;
-    color: black;
-}
-
-section div{
-    width: 100%;
-    
-}
-
-section div ul{
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-/* descargar_juego.html */
-.li_links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-    font-size: 30px;
-    
-}
-
-.h3_descargar_juego{
-    text-align: start;
-}
-
-/* contacto.html */
-form{
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: 1000px;
-    height: 550px;
-    padding: 30px;
-    font-size: 15px;
-}
-
-.main_section_div_form{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    
-}
+/*# sourceMappingURL=estilos.css.map */

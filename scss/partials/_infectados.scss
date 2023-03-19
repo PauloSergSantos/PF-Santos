@@ -1,0 +1,42 @@
+@use './variables';
+
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+main{
+    section{
+        .div_img{
+            .img_1{
+                @include medidas(250px, 400px);
+            }
+        }
+    }
+
+    section{
+        .img_vid_colum{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .img_2{
+                @include medidas(400px, 400px);
+            }
+
+            iframe{
+                @include medidas(315px, 400px);
+            }
+        }
+    }
+
+    section{
+        .div_img{
+            .img_3{
+                @include medidas(150px, 250px);
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

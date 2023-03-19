@@ -1,0 +1,98 @@
+@use './variables';
+
+@mixin h3{
+    margin-left: 10px;
+    color: red;
+    font-size: 30px;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}
+
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+main{
+    section{
+        display: flex;
+        margin-top: 30px;
+        color: black;
+
+        div{
+            width: 100%;
+
+            p{
+                color: white;
+                padding: 10px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 0px;
+            }
+
+            nav{
+                .li_container{
+                    color: white;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    font-family: 'Roboto', sans-serif;
+                    margin-bottom: 30px;
+    
+                    li{
+                        list-style: none;
+
+                        a{
+                            color: rgb(58, 43, 226);
+                            text-decoration: none;
+                            font-size: 20px;
+
+                            &:active{
+                                color: rgb(101, 226, 43);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div{
+            .img_1{
+                @include medidas(250px, 400px);
+            }
+        }
+
+    }
+    
+    section{
+        div{
+            h3{
+                @include h3;
+            }
+            .h3_curiosidades{
+                text-align: start;
+                font-size: 20px;
+            }
+
+            .li_container{
+                color: white;
+                margin-left: 10px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+
+                li{
+                    list-style: none;
+                }
+            }
+        }
+
+        .div_img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img_2{
+                @include medidas(400px, 400px);
+            }
+        }
+    }
+} 

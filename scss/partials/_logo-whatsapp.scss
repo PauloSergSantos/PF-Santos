@@ -1,0 +1,15 @@
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+div{
+    a{
+        .logo_whatsapp{
+            position: fixed;
+            left: 1260px;
+            bottom: 20px;
+            @include medidas(50px, 50px);
+        }
+    }
+}
