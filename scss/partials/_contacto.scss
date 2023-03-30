@@ -1,9 +1,4 @@
-@use './variables';
-
-@mixin medidas($altura, $ancho){
-    height: $altura;
-    width: $ancho;
-}
+@use './mixin' as mixin;
 
 main{
     div{
@@ -18,7 +13,7 @@ main{
                 background-color: white;
                 padding: 30px;
                 font-size: 15px;
-                @include medidas(550px, 1000px);
+                @include mixin.medidas(550px, 1000px);
             }
             
         }

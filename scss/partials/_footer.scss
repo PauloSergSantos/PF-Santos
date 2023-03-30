@@ -1,9 +1,6 @@
-@use './variables';
+@use './variables' as vars;
 
-@mixin medidas($altura, $ancho){
-    height: $altura;
-    width: $ancho;
-}
+@use './mixin' as mixin;
 
 div{
     div{
@@ -11,11 +8,11 @@ div{
             display: flex;
             justify-content: center;
             font-family: 'Roboto', sans-serif;
-            background-color: variables.$background-navfooter;    
+            background-color: vars.$background-footer;    
             height: 9rem;
 
             .footer_p{
-                color: black;
+                color: white;
                 font-size: 15px;
                 font-family: 'Roboto', sans-serif;
             }
@@ -25,7 +22,7 @@ div{
                     .logo_instagram{
                         padding-top: 2rem;
                         margin-bottom: 10px;
-                        @include medidas(70px, 100px);
+                        @include mixin.medidas(70px, 100px);
                     }
                 }
             }
@@ -34,7 +31,7 @@ div{
                 a{
                     .logo_gmail{    
                         margin: 20px;
-                        @include medidas(50px, 50px);
+                        @include mixin.medidas(50px, 50px);
                     }
                 }
             }
@@ -43,7 +40,7 @@ div{
                 a{
                     .logo_facebook{
                         margin: 20px;
-                        @include medidas(44px, 50px);
+                        @include mixin.medidas(44px, 50px);
                     }
                 }
             }

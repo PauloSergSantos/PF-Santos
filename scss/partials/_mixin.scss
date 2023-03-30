@@ -1,0 +1,28 @@
+@mixin medidas($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
+
+@mixin h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bevan', cursive;
+    margin-top: 40px;
+}
+
+@mixin h2{
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}
+
+@mixin h3{
+    margin-left: 10px;
+    color: red;
+    font-size: 30px;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+}

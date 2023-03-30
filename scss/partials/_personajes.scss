@@ -1,17 +1,5 @@
-@use './variables';
+@use './mixin' as mixin;
 
-@mixin h3{
-    margin-left: 10px;
-    color: red;
-    font-size: 30px;
-    font-family: 'Francois One', sans-serif;
-    text-align: center;
-}
-
-@mixin medidas($altura, $ancho){
-    height: $altura;
-    width: $ancho;
-}
 
 main{
     section{
@@ -42,12 +30,12 @@ main{
                         list-style: none;
 
                         a{
-                            color: rgb(58, 43, 226);
+                            color: rgb(101, 226, 43);
                             text-decoration: none;
                             font-size: 20px;
 
                             &:active{
-                                color: rgb(101, 226, 43);
+                                color: rgb(58, 43, 226);
                             }
                         }
                     }
@@ -57,7 +45,7 @@ main{
 
         div{
             .img_1{
-                @include medidas(250px, 400px);
+                @include mixin.medidas(250px, 400px);
             }
         }
 
@@ -66,7 +54,7 @@ main{
     section{
         div{
             h3{
-                @include h3;
+                @include mixin.h3;
             }
             .h3_curiosidades{
                 text-align: start;
@@ -91,7 +79,7 @@ main{
             align-items: center;
 
             .img_2{
-                @include medidas(400px, 400px);
+                @include mixin.medidas(400px, 400px);
             }
         }
     }
