@@ -1,15 +1,10 @@
-@use './variables';
-
-@mixin medidas($altura, $ancho){
-    height: $altura;
-    width: $ancho;
-}
+@use './mixin' as mixin;
 
 main{
     section{
         .div_img{
             .img_1{
-                @include medidas(250px, 400px);
+                @include mixin.medidas(250px, 400px);
             }
         }
     }
@@ -22,11 +17,11 @@ main{
             align-items: center;
 
             .img_2{
-                @include medidas(400px, 400px);
+                @include mixin.medidas(400px, 400px);
             }
 
             iframe{
-                @include medidas(315px, 400px);
+                @include mixin.medidas(315px, 400px);
             }
         }
     }
@@ -34,7 +29,7 @@ main{
     section{
         .div_img{
             .img_3{
-                @include medidas(150px, 250px);
+                @include mixin.medidas(150px, 250px);
                 margin-bottom: 30px;
             }
         }

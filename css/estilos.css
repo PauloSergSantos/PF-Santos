@@ -7,37 +7,9 @@ html {
   font-size: 62.5%;
 }
 
-.div_sticky_navbar {
-  position: sticky;
-  left: 0px;
-  top: 0px;
-}
-.div_sticky_navbar header {
-  background-color: #16C8B1;
-  width: 100%;
-  height: 4rem;
-}
-.div_sticky_navbar header nav .header_nav_ul_li_a_navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li {
-  list-style: none;
-  margin: 5px;
-}
-.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a {
-  text-decoration: none;
-  font-family: "Francois One", sans-serif;
-  font-size: 15px;
-  color: black;
-}
-.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a:hover {
-  color: rgb(55, 0, 255);
-}
-.div_sticky_navbar header nav .header_nav_ul_li_a_navbar li a .header_nav_ul_li_a_img_navbar {
-  height: 30px;
-  width: 50px;
+div nav div a img {
+  height: 20px;
+  width: 60px;
 }
 
 div a .logo_whatsapp {
@@ -48,11 +20,20 @@ div a .logo_whatsapp {
   width: 50px;
 }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 main div div h1 {
   color: white;
   text-align: center;
   font-size: 50px;
   font-family: "Bevan", cursive;
+  margin-top: 40px;
 }
 main section .main_section_div_img_vid {
   display: flex;
@@ -127,12 +108,12 @@ main section div nav .li_container li {
   list-style: none;
 }
 main section div nav .li_container li a {
-  color: rgb(58, 43, 226);
+  color: rgb(101, 226, 43);
   text-decoration: none;
   font-size: 20px;
 }
 main section div nav .li_container li a:active {
-  color: rgb(101, 226, 43);
+  color: rgb(58, 43, 226);
 }
 main section div .img_1 {
   height: 250px;
@@ -210,12 +191,12 @@ main section div nav .li_links li {
   list-style: none;
 }
 main section div nav .li_links li a {
-  color: rgb(58, 43, 226);
+  color: rgb(101, 226, 43);
   text-decoration: none;
   font-size: 20px;
 }
 main section div nav .li_links li a:active {
-  color: rgb(101, 226, 43);
+  color: rgb(58, 43, 226);
 }
 main section div .h3_descargar_juego {
   text-align: start;
@@ -240,11 +221,11 @@ div div footer {
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  background-color: #16C8B1;
+  background-color: #111;
   height: 9rem;
 }
 div div footer .footer_p {
-  color: black;
+  color: white;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
 }

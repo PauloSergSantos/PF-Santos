@@ -22,22 +22,29 @@
 </head>
 <body>
     <div class="container-fluid" style="background-color: black;">
-        <div class="row div_sticky_navbar">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color: #16C8B1;">
-                <header>        
-                    <nav>
-                        <ul class="header_nav_ul_li_a_navbar">
-                            <li><a href="../index.html"><img class="header_nav_ul_li_a_img_navbar" src="../img/Left_4_Dead_2_logo.webp" alt="Logo L4D2"></a></li>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="../pages/personajes.html">Personajes</a></li>
-                            <li><a href="../pages/infectados.html">Infectados</a></li>
-                            <li><a href="../pages/descargar_juego.html">Descargar</a></li>
-                            <li><a href="../pages/contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Left_4_Dead_2_logo.webp" alt="Left 4 Dead 2"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">LEFT 4 DEAD 2</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">INICIO</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/personajes.html">PERSONAJES</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/infectados.html">INFECTADOS</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/descargar_juego.html">DESCARGAR JUEGO</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a></li>
                         </ul>
-                    </nav>
-                </header>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     
         <div>
             <a href="https://web.whatsapp.com/" target="_blank"><img class="logo_whatsapp" src="../img/logo whatsapp.png" alt="Logo whatsapp"></a>    
@@ -119,7 +126,7 @@
         </main>
 
         <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color: #16C8B1;">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="background-color: #111;">
                 <footer>
                     <p class="footer_p">Copyright</p>
                     <div>

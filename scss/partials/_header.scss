@@ -1,46 +1,13 @@
-@use './variables';
+@use './mixin' as mixin;
 
-@mixin medidas($altura, $ancho){
-    height: $altura;
-    width: $ancho;
-}
-
-.div_sticky_navbar{
-    position: sticky;
-    left: 0px;
-    top: 0px;
-
-    header{
-        background-color: variables.$background-navfooter;
-        width: 100%;
-        height: 4rem;
-
-        nav{
-            .header_nav_ul_li_a_navbar{
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-
-                li{
-                    list-style: none;
-                    margin: 5px;
-
-                    a{
-                        text-decoration: none;
-                        font-family: 'Francois One', sans-serif;
-                        font-size: 15px;
-                        color: black;
-
-                        &:hover{
-                            color:rgb(55, 0, 255);
-                        }
-
-                        .header_nav_ul_li_a_img_navbar{
-                            @include medidas(30px, 50px);
-                        }
-                    }
-                };
+div{
+    nav{
+        div{
+            a{
+                img{
+                    @include mixin.medidas(20px, 60px)
+                }
             }
-        };
+        }
     }
 }

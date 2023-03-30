@@ -1,18 +1,10 @@
-@use './variables';
-
-@mixin h2{
-    margin-left: 10px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Francois One', sans-serif;
-    text-align: center;
-}
+@use './mixin' as mixin;
 
 main{
     section{
         div{
             h2{
-                @include h2;
+                @include mixin.h2;
             }
         }
         div{
@@ -28,12 +20,12 @@ main{
                         list-style: none;
 
                         a{
-                            color: rgb(58, 43, 226);
+                            color: rgb(101, 226, 43);
                             text-decoration: none;
                             font-size: 20px;
 
                             &:active{
-                                color: rgb(101, 226, 43);
+                                color: rgb(58, 43, 226);
                             }
                         }
                     }
